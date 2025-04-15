@@ -55,8 +55,8 @@ const teamMembers = [
 let cardsHTML = ``;
 for (const member of teamMembers) {
   cardsHTML += `<div class ="col-4">
-        <div class = "card d-flex">
-          
+        <div class = "custom-card d-flex f-direction-column">
+          <div class ="card-img w -25 bg-success">
           <div class ="card-info bg-dark">
             <h3 class ="fw-bold text-white">${member.name}</h3>
             <p class ="text-white fs-4">${member.role}</p>

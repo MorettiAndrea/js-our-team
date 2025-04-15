@@ -1,4 +1,8 @@
 const cardContainer = document.querySelector(".card-container");
+const newMemberName = document.getElementById("new-member-name");
+const newMemberRole = document.getElementById("new-member-role");
+const newMemberEmail = document.getElementById("new-member-Email");
+const addNewMember = document.getElementById("add-new-member");
 
 const teamMembers = [
   {
@@ -53,3 +57,13 @@ for (const member of teamMembers) {
       </div>`;
 }
 cardContainer.innerHTML = cardsHTML;
+
+addNewMember.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const newName = newMemberName.value;
+  const newRole = newMemberRole.value;
+  const newEmail = newMemberEmail.value;
+
+  const newMember = (newName, newRole, newEmail);
+  teamMembers.push(newMember);
+});

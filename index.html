@@ -10,18 +10,19 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <script src="./prova.js" defer></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="text-pink text-center">Meet our Team</h1>
-    <p class="fs-5 text-center">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
-      perspiciatis cumque ea at aspernatur tenetur nemo dolorem est veritatis?
-      Temporibus!
-    </p>
-    <div class="row d.flex card-container">
-      <!-- <div class="col-4">
+    <div class="container">
+      <h1 class="text-pink text-center">Meet our Team</h1>
+      <p class="fs-5 text-center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+        perspiciatis cumque ea at aspernatur tenetur nemo dolorem est veritatis?
+        Temporibus!
+      </p>
+      <div class="row d.flex card-container f-wrap">
+        <!-- <div class="col-4">
         <div class="card">
           <div class="card-img"><img src="./img/female1.png" alt="" /></div>
           <div class="card-text">
@@ -31,6 +32,28 @@
           </div>
         </div>
       </div> -->
+      </div>
+
+      <!-- form input nuovo membro -->
+      <form
+        action="input"
+        class="d-flex mt-5 justify-content-around"
+        id="add-new-member"
+      >
+        <div>
+          <label for="new-member-name">Nome nuovo membro</label>
+          <input type="text" id="new-member-name" />
+        </div>
+        <div>
+          <label for="new-member-role">Mansione nuovo membro</label>
+          <input type="text" id="new-member-role" />
+        </div>
+        <div>
+          <label for="new-member-email">Email nuovo membro</label>
+          <input type="text" id="new-member-email" />
+        </div>
+        <button class="btn btn-primary">Aggiungi</button>
+      </form>
     </div>
   </body>
 </html>

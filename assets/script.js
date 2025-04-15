@@ -42,12 +42,12 @@ const teamMembers = [
 let cardsHTML = ``;
 for (const member of teamMembers) {
   cardsHTML += `<div class="col-4">
-        <div class="card">
+        <div class="card d-flex">
           <div class="card-img"><img src="./img/${member.img}" alt="${member.name}" /></div>
-          <div class="card-info">
-            <h3>${member.name}</h3>
-            <p>${member.role}</p>
-            <p>${member.email}</p>
+          <div class="card-info bg-dark">
+            <h3 class="fw-bold text-white">${member.name}</h3>
+            <p class="text-white fs-4">${member.role}</p>
+            <p class="text-primary fs-4">${member.email}</p>
           </div>
         </div>
       </div>`;
